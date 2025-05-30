@@ -1,0 +1,182 @@
+/* General body styles */
+body {
+    font-family: 'Inter', sans-serif; /* Use Inter font, fallback to sans-serif */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333; /* Dark grey text color */
+    line-height: 1.6; /* Improve readability */
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+/* Header styles */
+header {
+    background-color: #ff69b4; /* Hot pink */
+    color: white; /* White text */
+    padding: 1.5rem 0; /* Top/bottom padding */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-bottom-left-radius: 15px; /* Rounded bottom-left corner */
+    border-bottom-right-radius: 15px; /* Rounded bottom-right corner */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5rem; /* Larger font size */
+    letter-spacing: 2px; /* Add letter spacing */
+}
+
+/* Hero section styles */
+#hero {
+    display: flex; /* Use flexbox for hero section content */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    align-items: center; /* Align items vertically in center */
+    justify-content: center; /* Center items horizontally */
+    padding: 3rem 1rem; /* Padding around the section */
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); /* Light pink gradient */
+    gap: 2rem; /* Space between flex items */
+    border-radius: 20px; /* Rounded corners for the section */
+    margin: 2rem auto; /* Center the section with margin */
+    max-width: 1200px; /* Max width for the section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+.hero-content {
+    flex: 1; /* Allow content to grow */
+    min-width: 300px; /* Minimum width for content */
+    text-align: center; /* Center text */
+}
+
+.hero-content h2 {
+    color: #d81b60; /* Deep pink color */
+    font-size: 2.2rem; /* Larger font size */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.hero-content p {
+    font-size: 1.1rem; /* Slightly larger paragraph text */
+    color: #555; /* Darker grey text */
+    margin-bottom: 1.5rem; /* Space below paragraph */
+}
+
+.hero-image {
+    flex: 1; /* Allow image to grow */
+    min-width: 300px; /* Minimum width for image */
+    text-align: center; /* Center image */
+}
+
+.hero-image img {
+    max-width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners for image */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+/* Call to action button styles */
+.cta-button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white; /* White text */
+    padding: 0.8rem 1.8rem; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 30px; /* Fully rounded button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.cta-button:hover {
+    background-color: #e0408a; /* Darker pink on hover */
+    transform: translateY(-3px); /* Lift button on hover */
+}
+
+/* Milestones section styles */
+#milestones {
+    padding: 3rem 1rem; /* Padding around the section */
+    text-align: center; /* Center align text */
+    background-color: #fff; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    margin: 2rem auto; /* Center the section with margin */
+    max-width: 1200px; /* Max width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Section shadow */
+}
+
+#milestones h2 {
+    color: #d81b60; /* Deep pink */
+    font-size: 2.2rem; /* Larger font size */
+    margin-bottom: 2.5rem; /* Space below heading */
+}
+
+.milestone {
+    display: inline-block; /* Display milestones inline */
+    width: 300px; /* Fixed width for each milestone */
+    margin: 1.5rem; /* Margin around each milestone */
+    vertical-align: top; /* Align to top */
+    background-color: #fce4ec; /* Lightest pink background */
+    padding: 1.5rem; /* Padding inside milestone */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Milestone shadow */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.milestone:hover {
+    transform: translateY(-5px); /* Lift milestone on hover */
+}
+
+.milestone img {
+    max-width: 100%; /* Ensure image fits container */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, crop if necessary */
+    border-radius: 10px; /* Rounded corners for image */
+    margin-bottom: 1rem; /* Space below image */
+}
+
+.milestone h3 {
+    color: #d81b60; /* Deep pink */
+    font-size: 1.5rem; /* Font size for milestone title */
+    margin-bottom: 0.8rem; /* Space below title */
+}
+
+.milestone p {
+    color: #666; /* Darker grey text */
+    font-size: 0.95rem; /* Slightly smaller paragraph text */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 1.5rem 0; /* Padding */
+    margin-top: auto; /* Push footer to the bottom */
+    border-top-left-radius: 15px; /* Rounded top-left corner */
+    border-top-right-radius: 15px; /* Rounded top-right corner */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Adjust header font size */
+    }
+
+    #hero {
+        flex-direction: column; /* Stack hero content vertically */
+        padding: 2rem 1rem; /* Adjust padding */
+    }
+
+    .hero-content, .hero-image {
+        min-width: unset; /* Remove min-width constraint */
+        width: 100%; /* Take full width */
+    }
+
+    .milestone {
+        width: 90%; /* Take more width on small screens */
+        margin: 1rem auto; /* Center milestones */
+        display: block; /* Stack milestones vertically */
+    }
+
+    #milestones h2 {
+        font-size: 1.8rem; /* Adjust milestone heading font size */
+    }
+}
